@@ -1,0 +1,31 @@
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-75nx2[0m
+{"level":"warn","ts":1582201542.5161018,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582201542.5165253,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-8jtc5[0m
+{"level":"warn","ts":1582201543.0290835,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1582201543.030616,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-custom-jenkins-sample-mctcf-tcsn2[0m
+{"level":"warn","ts":1582201555.140051,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1582201556.1459353,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/custom-jenkins-sample2.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+failed to get helm version: failed to run 'helm version --short' command in directory '', output: 'Client: v2.14.3+g0e7f3b6
+Error: could not find tiller'
+old helm binary on the PATH so replacing with helm 3
+Cloning the Jenkins X versions repo https://github.com/*********/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-custom-jenkins-sample-mctcf-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-build[0m
+defaulting to Jenkins server ****************-http-server2 due to $TRIGGER_JENKINS_SERVER
+using Jenkins server http://****************-http-server2:8080
+Using git URL https://github.com/*********/custom-jenkins-sample2.git and branch master
+triggering pipeline job *********/custom-jenkins-sample2/master
